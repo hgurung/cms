@@ -19,7 +19,7 @@ copy from .env.example to .env to specify version of API
 
 #CMS DOCUMENTATION
 
-- Clone CMS from git@git.ekbana.info:ekcms/ekcms-ver4.git
+- Clone CMS from https://github.com/hgurung/cms.git
 - Run Composer Install
 - Set Permission 777 to storage and bootstrap folder
 - Run php artisan key:generate from terminal
