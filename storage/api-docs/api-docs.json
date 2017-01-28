@@ -1,0 +1,202 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "New EK CMS",
+        "version": "v1"
+    },
+    "host": "localhost:3232",
+    "basePath": "/api/v1",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/auth/register": {
+            "post": {
+                "tags": [
+                    "Register"
+                ],
+                "summary": "User Registration",
+                "description": "",
+                "operationId": "register",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "User Registration",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/register"
+                        }
+                    }
+                ],
+                "responses": {
+                    "422": {
+                        "description": "Required json Parameter"
+                    }
+                }
+            }
+        },
+        "/auth/login": {
+            "post": {
+                "tags": [
+                    "Login"
+                ],
+                "summary": "User Login",
+                "description": "",
+                "operationId": "login",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "User Login",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/login"
+                        }
+                    }
+                ],
+                "responses": {
+                    "401": {
+                        "description": "unsupported grant type"
+                    }
+                }
+            }
+        },
+        "/auth/forgotpassword": {
+            "post": {
+                "tags": [
+                    "Forgot Password"
+                ],
+                "summary": "Forgot Password",
+                "description": "",
+                "operationId": "forgotpassword",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Forgot Password",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/forgotpassword"
+                        }
+                    }
+                ],
+                "responses": {
+                    "422": {
+                        "description": "Required json Parameter"
+                    }
+                }
+            }
+        },
+        "/profiles": {
+            "get": {
+                "tags": [
+                    "Profiles"
+                ],
+                "summary": "Get Profile Detail",
+                "operationId": "getProfiles",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Get user Profiles",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Profile Detail"
+                    },
+                    "500": {
+                        "description": "Unauthenticated"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "register": {
+            "required": [
+                "name",
+                "email",
+                "password"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "login": {
+            "required": [
+                "grant_type",
+                "client_id",
+                "client_secret",
+                "username",
+                "password",
+                "scope"
+            ],
+            "properties": {
+                "grant_type": {
+                    "type": "string"
+                },
+                "client_id": {
+                    "type": "integer"
+                },
+                "client_secret": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "scope": {
+                    "type": "string"
+                }
+            }
+        },
+        "forgotpassword": {
+            "required": [
+                "email"
+            ],
+            "properties": {
+                "email": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

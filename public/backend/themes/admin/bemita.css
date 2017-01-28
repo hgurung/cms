@@ -1,0 +1,171 @@
+#header-nav-left{
+	float: right;
+}
+
+#page-header .user-account-btn .dropdown-menu {
+    padding-bottom: 0;
+    top: 39px;
+    left: -157px;
+}
+
+#page-header .user-account-btn .dropdown-menu:after, #page-header .user-account-btn .dropdown-menu:before {
+    left: 94%;
+    margin-left: -3px;
+}
+
+#header-nav-left{
+	float: right;
+}
+
+#page-header .user-account-btn .dropdown-menu {
+    padding-bottom: 0;
+    top: 39px;
+    left: -157px;
+}
+
+#page-header .user-account-btn .dropdown-menu:after, #page-header .user-account-btn .dropdown-menu:before {
+    left: 94%;
+    margin-left: -3px;
+}
+
+.default-button{
+	float: left;
+}
+.isa_info, .isa_success, .isa_warning, .isa_error {
+margin: 10px 0px;
+padding:12px;
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+		word-wrap: break-word;
+}
+.isa_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+		word-wrap: break-word;
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+		word-wrap: break-word;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+		word-wrap: break-word;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+
+
+.text-align-left label{
+	text-align: left !important;
+}
+
+.text-area0{
+	height:88px !important;
+}
+
+.upload-image{
+	float: left;
+    border: 1px solid #2d0f0f;
+    padding: 5px;
+}
+.radio-btn-click{
+	float: left;
+	margin-right: 10px;
+	margin-left: 7px;
+}
+
+#disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.6;
+    }
+
+.left-align{
+	margin-left:10px;
+}
+
+.modal-attr{
+	background: #fff;
+    max-width: 50%;
+    margin-left: 25%;
+    max-height: 205px;
+    margin-top: 10%;
+		border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 3px 9px !important;
+		border:1px solid rgba(0, 0, 0, .2);
+}
+.error{
+	color:red;
+}
+.title-rgt{
+	text-align: right;
+}
+
+.mdl-box{
+	z-index: 1 !important;
+	/*opacity: 0 !important;*/
+}
+
+/*added css for dropdown on users */
+.login-box {
+padding: 10px 15px;
+text-align: center;
+}
+
+.login-box .user-img {
+position: relative;
+float: left;
+width: 80px;
+height: 80px;
+margin-right: 15px;
+}
+
+.login-box .user-img a.change-img {
+font-size: 8px;
+line-height: 20px;
+position: absolute;
+bottom: 0;
+left: 0;
+display: none;
+width: 100%;
+height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #fdfdfd;
+background: rgba(0,0,0,.7);
+}
+
+.login-box .user-img img {
+width: 100%;
+height: 100%;
+}
+
+.login-box .user-info span {
+font-size: 17px;
+display: block;
+padding: 0 0 10px;
+}
+
+.login-box .user-info span i {
+font-size: 80%;
+font-style: normal;
+display: block;
+opacity: .7;
+}
+
+.login-box .user-info a {
+line-height: 16px;
+display: inline-block;
+height: 16px;
+margin-right: 5px;
+padding-right: 5px;
+}
+
+/*added css for dropdown on users */
